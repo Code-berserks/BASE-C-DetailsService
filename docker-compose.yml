@@ -7,6 +7,6 @@ services:
            dockerfile: Dockerfile
      container_name: Details_service
      volumes:
-      - :/demo
+      - :/var/lib/docker/volumes/
      command: java detailsService.jar
       

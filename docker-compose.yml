@@ -6,7 +6,9 @@ services:
            context: .
            dockerfile: Dockerfile
      container_name: Details_service
+     ports:
+      - 8081:81
      volumes:
-      - . :/var/lib/docker/volumes/
+      - . :/var/lib/docker/volumes/va 
      command: java detailsService.jar
       

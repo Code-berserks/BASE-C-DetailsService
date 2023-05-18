@@ -1,0 +1,12 @@
+version: '2'
+services:
+  detail_service:
+     image: codeberserk/detailsservive:latest
+     build:
+           context: .
+           dockerfile: Dockerfile
+     container_name: Details_service
+     volumes:
+      - :/demo
+     command: java detailsService.jar
+      

@@ -9,9 +9,9 @@ import lombok.Data;
 @Document(collection = "Details")
 public class Details {
 	@Id
-	private String id;
-	private String name;
-	private String age;
-	private String mailId;
-	private String mobileNumber;
+	public String id;
+	public String name;
+	public String age;
+	public String mailId;
+	public String mobileNumber;
 }

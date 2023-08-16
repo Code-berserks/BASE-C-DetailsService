@@ -1,5 +1,7 @@
 package com.primary.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -16,4 +18,7 @@ public class DetailsService {
 		detailsDAO.save(details);
 	}
 
+	public List<Details> getAllDetails() {
+		return detailsDAO.findAll();
+	}
 }
